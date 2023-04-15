@@ -1,3 +1,8 @@
+<?php
+// connect to the database
+include 'connect.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
