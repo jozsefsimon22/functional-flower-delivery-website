@@ -29,12 +29,13 @@
 
     <!-- Login Form -->
     <div class="login-form" id="test">
-        <h1>Login</h1>
-        <div class="container-fluid">
+        <div class="container-fluid text-center">
             <div class="row">
-                <div class="col-4">
+                <div class="col-3">
+                    <img src="Photos/Decoration/left.png" alt="left-flower" class="side-image-left">
                 </div>
-                <div class="col-4">
+                <div class="col-6">
+                    <h1>Login</h1>
                     <form action="login.php" method="post">
                         <label for="username">
                             <i class="fas fa-user"></i>
@@ -44,10 +45,12 @@
                             <i class="fas fa-lock"></i>
                         </label>
                         <input type="password" name="password" placeholder="Password" id="password" required>
-                        <br>
-                        <input type="submit" value="Login">
+                        <input type="submit" value="Login" id="login_button">
                     </form>
-                    <p>Don't have an account? <a href="register.php">Register</a></p>
+                    <p id="register">Don't have an account? <a href="register.php">Register</a></p>
+                </div>
+                <div class="col-3">
+                    <img src="Photos/Decoration/right.png" alt="right-flower" class="side-image-right">
                 </div>
             </div>
         </div>
