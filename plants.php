@@ -1,3 +1,11 @@
+<?php
+include 'connect.php';
+?>
+
+<?php
+include 'create-plants-table.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,94 +35,7 @@
     <?php require 'navbar.php'; ?>
 
     <!-- Main Body New -->
-    <div class="container main-body">
-        <div class="row">
-            <div class="col">
-                <img src="Photos/Plants/Cat Planter.jpg" alt="flower">
-                <div class="row">
-                    <h5>Cat Planter</h5>
-                    <h6>£25.75</h6>
-                </div>
-                <div class="row">
-                    <button>Add to Cart</button>
-                </div>
-            </div>
-            <div class="col">
-                <img src="Photos/Plants/Coffee Plant in Ceramic Pot.jpg" alt="flower">
-                <div class="row">
-                    <h5>Coffee Plant in Ceramic Pot</h5>
-                    <h6>£21.50</h6>
-                </div>
-                <div class="row">
-                    <button>Add to Cart</button>
-                </div>
-            </div>
-            <div class="col">
-                <img src="Photos/Plants/Mother's Day Yellow Rose.jpg" alt="flower">
-                <div class="row">
-                    <h5>Mother's Day Yellow Rose</h5>
-                    <h6>£23.25</h6>
-                </div>
-                <div class="row">
-                    <button>Add to Cart</button>
-                </div>
-            </div>
-            <div class="col">
-                <img src="Photos/Plants/Peace Lily Plant.jpg" alt="flower">
-                <div class="row">
-                    <h5>Peace Lily Plant</h5>
-                    <h6>£24.50</h6>
-                </div>
-                <div class="row">
-                    <button>Add to Cart</button>
-                </div>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col">
-                <img src="Photos/Plants/Pink Azalea in Jute Pot.jpg" alt="flower">
-                <div class="row">
-                    <h5>Pink Azalea in Jute Pot</h5>
-                    <h6>£24.50</h6>
-                </div>
-                <div class="row">
-                    <button>Add to Cart</button>
-                </div>
-            </div>
-            <div class="col">
-                <img src="Photos/Plants/Pink Rose in Floral Pot.jpg" alt="flower">
-                <div class="row">
-                    <h5>Pink Rose in Floral Pot</h5>
-                    <h6>£23.75</h6>
-                </div>
-                <div class="row">
-                    <button>Add to Cart</button>
-                </div>
-            </div>
-            <div class="col">
-                <img src="Photos/Plants/Pink Rose in Grey Ceramic Pot.jpg" alt="flower">
-                <div class="row">
-                    <h5>Pink Rose in Grey Ceramic Pot</h5>
-                    <h6>£22.50</h6>
-                </div>
-                <div class="row">
-                    <button>Add to Cart</button>
-                </div>
-            </div>
-            <div class="col">
-                <img src="Photos/Plants/White Azalea in Two Tone Pot.jpg" alt="flower">
-                <div class="row">
-                    <h5>The Yui</h5>
-                    <h6>£24.50</h6>
-                </div>
-                <div class="row">
-                    <button>Add to Cart</button>
-                </div>
-            </div>
-        </div>
-
-    </div>
+    <?php include 'plants-table.php'; ?>
 
 
     <!-- Footer -->

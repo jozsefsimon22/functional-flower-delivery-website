@@ -2,6 +2,10 @@
 include 'connect.php';
 ?>
 
+<?php
+include 'create-flower-table.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,96 +36,6 @@ include 'connect.php';
 
     <!-- Main Body New -->
     <?php include 'flowers-table.php'; ?>
-
-    <!-- <div class="container main-body">
-        <div class="row">
-            <div class="col">
-                <img src="Photos/Flowers/the_anna.webp" alt="flower">
-                <div class="row">
-                    <h5>The Anna</h5>
-                    <h6>£29.99</h6>
-                </div>
-                <div class="row">
-                    <button>Add to Cart</button>
-                </div>
-            </div>
-            <div class="col">
-                <img src="Photos/Flowers/the_becca.webp" alt="flower">
-                <div class="row">
-                    <h5>The Becca</h5>
-                    <h6>£19.99</h6>
-                </div>
-                <div class="row">
-                    <button>Add to Cart</button>
-                </div>
-            </div>
-            <div class="col">
-                <img src="Photos/Flowers/the_hallie.webp" alt="flower">
-                <div class="row">
-                    <h5>The Hallie</h5>
-                    <h6>£34.99</h6>
-                </div>
-                <div class="row">
-                    <button>Add to Cart</button>
-                </div>
-            </div>
-            <div class="col">
-                <img src="Photos/Flowers/the_helga.webp" alt="flower">
-                <div class="row">
-                    <h5>The Helga</h5>
-                    <h6>£19.99</h6>
-                </div>
-                <div class="row">
-                    <button>Add to Cart</button>
-                </div>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col">
-                <img src="Photos/Flowers/the_minnie.webp" alt="flower">
-                <div class="row">
-                    <h5>The Minnie</h5>
-                    <h6>£9.99</h6>
-                </div>
-                <div class="row">
-                    <button>Add to Cart</button>
-                </div>
-            </div>
-            <div class="col">
-                <img src="Photos/Flowers/the_phoebe.webp" alt="flower">
-                <div class="row">
-                    <h5>The Phoebe</h5>
-                    <h6>£26.99</h6>
-                </div>
-                <div class="row">
-                    <button>Add to Cart</button>
-                </div>
-            </div>
-            <div class="col">
-                <img src="Photos/Flowers/the_rue.webp" alt="flower">
-                <div class="row">
-                    <h5>The Rue</h5>
-                    <h6>£29.99</h6>
-                </div>
-                <div class="row">
-                    <button>Add to Cart</button>
-                </div>
-            </div>
-            <div class="col">
-                <img src="Photos/Flowers/the_yui.webp" alt="flower">
-                <div class="row">
-                    <h5>The Yui</h5>
-                    <h6>£49.99</h6>
-                </div>
-                <div class="row">
-                    <button>Add to Cart</button>
-                </div>
-            </div>
-        </div>
-
-    </div> -->
-
 
     <!-- Footer -->
     <?php include 'footer.php'; ?>
