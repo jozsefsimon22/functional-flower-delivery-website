@@ -1,13 +1,14 @@
 <?php
 $query = "CREATE TABLE IF NOT EXISTS `users` (
-  `email` int(10) NOT NULL,
-  `firstName` char(50) NOT NULL,
-  `lastName` char(50) NOT NULL,
-  `phoneNumber` char(20) DEFAULT NULL,
-  `street` char(225) DEFAULT NULL,
-  `city` char(225) DEFAULT NULL,
-  `country` char(225) DEFAULT NULL,
-  `postcode` char(225) DEFAULT NULL,
+  `email` VARCHAR(255) NOT NULL,
+  `password` CHAR(225) NOT NULL,
+  `firstName` CHAR(50) NOT NULL,
+  `lastName` CHAR(50) NOT NULL,
+  `phoneNumber` CHAR(20) DEFAULT NULL,
+  `street` CHAR(225) DEFAULT NULL,
+  `city` CHAR(225) DEFAULT NULL,
+  `country` CHAR(225) DEFAULT NULL,
+  `postcode` CHAR(225) DEFAULT NULL,
   PRIMARY KEY (`email`)
 );";
 

@@ -1,3 +1,12 @@
+<?php
+// connect to the database
+include 'connect.php';
+?>
+
+<?php
+include 'process-new-user-form.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,17 +47,21 @@
                 </div>
                 <div class="col-6">
                     <h1>Register</h1>
-                    <form action="register.php" method="post">
+                    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
                         <input type="email" name="email" placeholder="Email Address" id="email" required>
                         <input type="password" name="password" placeholder="Password" id="password" required>
                         <input type="password" name="password_two" placeholder="Repeat Password" id="password_two"
                             required>
+                        <h2>Personal Details</h2>
+                        <input type="text" name="first_name" placeholder="First Name" id="first_name" required>
+                        <input type="text" name="last_name" placeholder="Last Name" id="last_name" required>
+                        <input type="tel" name="phone" placeholder="Phone Number" id="phone" required>
                         <h2>Address</h2>
-                        <input type="address" name="address" placeholder="Street" id="address">
+                        <input type="street" name="street" placeholder="Street" id="street">
                         <input type="city" name="city" placeholder="City" id="city">
                         <input type="country" name="country" placeholder="Country" id="country" autocomplete="country">
                         <input type="postcode" name="postcode" placeholder="Postcode" id="postcode">
-                        <input type="submit" value="Register" id="register_button">
+                        <input type="submit" value="Register" id="register_button" name="register">
                     </form>
                     <p id="register">Already have an account? <a href="login.php">Login</a></p>
                 </div>
