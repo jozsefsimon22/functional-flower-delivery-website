@@ -1,11 +1,14 @@
 <?php
 $query = "CREATE TABLE IF NOT EXISTS `users` (
-  `userID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `email` int(10) NOT NULL,
   `firstName` char(50) NOT NULL,
   `lastName` char(50) NOT NULL,
-  `address` char(225) DEFAULT NULL,
   `phoneNumber` char(20) DEFAULT NULL,
-  PRIMARY KEY (`userID`)
+  `street` char(225) DEFAULT NULL,
+  `city` char(225) DEFAULT NULL,
+  `country` char(225) DEFAULT NULL,
+  `postcode` char(225) DEFAULT NULL,
+  PRIMARY KEY (`email`)
 );";
 
 mysqli_query($connect, $query);

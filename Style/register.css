@@ -1,19 +1,19 @@
-/* Path: flower-deliery/Style/login.css */
+/* Path: flower-deliery/Style/register.css */
 
-.login-form input {
+.register-form input {
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px;
     width: 99%;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
-.login-form {
+.register-form {
     color: white;
     position: relative;
 }
 
-#login_button {
+#register_button {
     border: none;
     border-radius: 5px;
     padding: 10px;
@@ -22,15 +22,11 @@
     color: white;
 }
 
-#register {
-    margin-bottom: 300px;
-}
-
-#login_button:hover {
+#register_button:hover {
     background-color: #732953;
 }
 
-.login-form h1 {
+.register-form h1 {
     margin-top: 100px;
 }
 

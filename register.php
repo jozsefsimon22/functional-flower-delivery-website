@@ -5,6 +5,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 
 
     <!-- Required meta tags -->
@@ -14,7 +15,7 @@
 
     <link rel="stylesheet" href="Style/header.css">
     <link rel="stylesheet" href="Style/footer.css">
-    <link rel="stylesheet" href="Style/login.css">
+    <link rel="stylesheet" href="Style/register.css">
 
     <title>Thistle & Bloom Edinburgh</title>
 
@@ -28,27 +29,28 @@
     <?php require 'navbar.php'; ?>
 
 
-    <!-- Login Form -->
-    <div class="login-form" id="test">
+    <!-- Register Form -->
+    <div class="register-form" id="test">
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col-3">
                     <img src="Photos/Decoration/left.png" alt="left-flower" class="side-image-left">
                 </div>
                 <div class="col-6">
-                    <h1>Login</h1>
-                    <form action="login.php" method="post">
-                        <div class="input-with-icon">
-                            <input type="text" name="username" placeholder="Username" id="username" required>
-                        </div>
-
-                        <div class="input-with-icon">
-                            <input type="password" name="password" placeholder="Password" id="password" required>
-                        </div>
-
-                        <input type="submit" value="Login" id="login_button">
+                    <h1>Register</h1>
+                    <form action="register.php" method="post">
+                        <input type="email" name="email" placeholder="Email Address" id="email" required>
+                        <input type="password" name="password" placeholder="Password" id="password" required>
+                        <input type="password" name="password_two" placeholder="Repeat Password" id="password_two"
+                            required>
+                        <h2>Address</h2>
+                        <input type="address" name="address" placeholder="Street" id="address">
+                        <input type="city" name="city" placeholder="City" id="city">
+                        <input type="country" name="country" placeholder="Country" id="country" autocomplete="country">
+                        <input type="postcode" name="postcode" placeholder="Postcode" id="postcode">
+                        <input type="submit" value="Register" id="register_button">
                     </form>
-                    <p id="register">Don't have an account? <a href="register.php">Register</a></p>
+                    <p id="register">Already have an account? <a href="login.php">Login</a></p>
                 </div>
                 <div class="col-3">
                     <img src="Photos/Decoration/right.png" alt="right-flower" class="side-image-right">
