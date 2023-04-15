@@ -3,6 +3,11 @@
 include 'connect.php';
 ?>
 
+<?php
+//If the user table does not exist, then create it
+include 'create-user-table.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
