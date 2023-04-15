@@ -1,0 +1,45 @@
+.col-6 {
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+.mission-statement {
+    text-align: center;
+}
+
+.mission-statement i {
+    letter-spacing: 2px;
+}
+
+.side-image-left {
+    height: auto;
+    width: 200px;
+    float: left;
+}
+
+.side-image-right {
+    height: auto;
+    width: 200px;
+    float: right;
+}
+
+#img-1 {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px gray;
+    float: left;
+    margin-right: 20px;
+    width: 400px;
+    height: auto;
+}
+
+#img-2 {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px gray;
+    float: right;
+    margin-left: 20px;
+    width: 400px;
+    height: auto;
+}

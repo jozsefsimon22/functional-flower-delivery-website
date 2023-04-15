@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+}
+
+.nav-link {
+    margin: 1px;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.button {
+    margin: 1px;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-link:hover {
+    background-color: #b05b8b;
+    color: white;
+
+}
+
+.login-icon {
+    filter: invert(1);
+    height: 25px;
+    margin: 10px;
+}
+
+.navbar {
+    background-color: white;
+}
