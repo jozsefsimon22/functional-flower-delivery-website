@@ -18,6 +18,9 @@
             </div>
         </div>
 
+        <!-- Navigation -->
+        <?php require 'navbar.php'; ?>
+
         <!-- Login -->
         <div class="center">
             <div class="container">

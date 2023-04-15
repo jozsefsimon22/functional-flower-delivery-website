@@ -22,49 +22,10 @@
 <body>
     <div class="container-fluid">
         <!-- Header -->
-        <div class="row align-items-center">
-            <div class="col-10 ">
-                <img src="Photos\logo.png" alt="company-logo">
-            </div>
-            <div class="col-2">
-                <ul class="nav nav-pills justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="checkout.html"><img class="login-icon" src="Icons\basket2.svg"
-                                alt="cart"> </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a id="login" class="nav-link" href="login.html"><img class="login-icon"
-                                src="Icons\person-circle.svg" alt="person-circle"></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <?php require 'header.php'; ?>
 
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light rounded-start rounded-end">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="col-2"></div>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav nav-fill flex-grow-1">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="index-home.php">Home</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="flowers.html">Flowers</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="plants.html">House Plants</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="about-us.html">About Us</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-2"></div>
-        </nav>
+        <?php require 'navbar.php'; ?>
 
         <!-- Main Body -->
         <div class="row checkout-main-body">
