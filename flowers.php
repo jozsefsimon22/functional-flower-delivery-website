@@ -1,3 +1,7 @@
+<?php
+include 'connect.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +31,9 @@
     <?php require 'navbar.php'; ?>
 
     <!-- Main Body New -->
-    <div class="container main-body">
+    <?php include 'flowers-table.php'; ?>
+
+    <!-- <div class="container main-body">
         <div class="row">
             <div class="col">
                 <img src="Photos/Flowers/the_anna.webp" alt="flower">
@@ -114,7 +120,7 @@
             </div>
         </div>
 
-    </div>
+    </div> -->
 
 
     <!-- Footer -->
