@@ -44,3 +44,15 @@
 .side-image-right {
     right: 0;
 }
+
+#password_error {
+    color: red;
+}
+
+#password_info {
+    display: none;
+}
+
+/* #password:focus+#password_info {
+    display: block;
+} */

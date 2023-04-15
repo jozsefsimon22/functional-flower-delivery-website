@@ -14,8 +14,6 @@ include 'process-new-user-form.php';
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-
 
     <!-- Required meta tags -->
     <meta charset="UTF-8">
@@ -47,11 +45,15 @@ include 'process-new-user-form.php';
                 </div>
                 <div class="col-6">
                     <h1>Register</h1>
-                    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-                        <input type="email" name="email" placeholder="Email Address" id="email" required>
-                        <input type="password" name="password" placeholder="Password" id="password" required>
-                        <input type="password" name="password_two" placeholder="Repeat Password" id="password_two"
+                    <form name='registration' action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post"
+                        onsubmit="return checkPasswordMatches()">
+                        <input type=" email" name="email" placeholder="Email Address" id="email" required>
+                        <input type="password" name="password" placeholder="Password" id="password" minlength="5"
                             required>
+                        <p id="password_info">Minimum 5 character</p>
+                        <input type="password" name="password_two" placeholder="Repeat Password" id="password_two"
+                            minlength="5" onchange="checkPasswordMatches()" required>
+                        <p id="password_error"></p>
                         <h2>Personal Details</h2>
                         <input type="text" name="first_name" placeholder="First Name" id="first_name" required>
                         <input type="text" name="last_name" placeholder="Last Name" id="last_name" required>
@@ -80,6 +82,9 @@ include 'process-new-user-form.php';
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+
+    <!-- JavaScript -->
+    <script src="register-script.js"></script>
 
 </body>
 
