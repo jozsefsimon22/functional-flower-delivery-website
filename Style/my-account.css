@@ -1,0 +1,29 @@
+/* Path: flower-deliery/Style/login.css */
+
+.my-account-body {
+    margin-bottom: 200px;
+    color: white;
+}
+
+#logout_button {
+    margin-top: 50px;
+}
+
+h1 {
+    margin-top: 100px;
+}
+
+.side-image-left,
+.side-image-right {
+    max-height: 700px;
+    width: auto;
+    position: absolute;
+}
+
+.side-image-left {
+    left: 0;
+}
+
+.side-image-right {
+    right: 0;
+}

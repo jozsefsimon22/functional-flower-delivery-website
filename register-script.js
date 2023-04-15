@@ -22,4 +22,4 @@ document.getElementById("password").addEventListener("input", function () {
     else {
         pwdInfo.style.display = "none";
     }
-}); // Add closing parenthesis and semicolon here
+});

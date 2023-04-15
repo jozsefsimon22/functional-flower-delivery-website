@@ -1,3 +1,12 @@
+<?php
+// connect to the database
+include 'connect.php';
+?>
+
+<?php
+include "authenticate-user.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,16 +29,15 @@
 
 </head>
 
+<!-- Header -->
+<?php require 'header.php'; ?>
+
+<!-- Navbar -->
+<?php require 'navbar.php'; ?>
+
 <body>
-    <!-- Header -->
-    <?php require 'header.php'; ?>
-
-    <!-- Navbar -->
-    <?php require 'navbar.php'; ?>
-
-
     <!-- Login Form -->
-    <div class="login-form" id="test">
+    <div class="login-form">
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col-3">
@@ -39,14 +47,14 @@
                     <h1>Login</h1>
                     <form action="login.php" method="post">
                         <div class="input-with-icon">
-                            <input type="text" name="username" placeholder="Username" id="username" required>
+                            <input type="text" name="email" placeholder="Email" id="email" required>
                         </div>
 
                         <div class="input-with-icon">
                             <input type="password" name="password" placeholder="Password" id="password" required>
                         </div>
 
-                        <input type="submit" value="Login" id="login_button">
+                        <input type="submit" value="Login" id="login_button" name="login">
                     </form>
                     <p id="register">Don't have an account? <a href="register.php">Register</a></p>
                 </div>
@@ -56,16 +64,14 @@
             </div>
         </div>
     </div>
-
-
-    <!-- Footer -->
-    <?php include 'footer.php'; ?>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-
 </body>
+
+<!-- Footer -->
+<?php include 'footer.php'; ?>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 
 </html>

@@ -18,7 +18,4 @@ if (mysqli_connect_errno()) {
     // If there is an error, display the error message and terminate the script
     die('Could not connect: ' . mysqli_connect_error());
 }
-
-// If the connection is successful, display a message or output HTML
-echo "Connected successfully<br><br>";
 ?>
