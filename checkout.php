@@ -1,3 +1,9 @@
+<?php
+session_start();
+include 'connect.php';
+include 'create-basket-table.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -87,63 +93,9 @@
             <div class="col basket-list">
                 <div class="inner">
                     <h3>Order Summary</h3>
-                    <div class="data">
-                        <table>
-                            <tr>
-                                <th></th>
-                                <th>Product</th>
-                                <th>Quantity</th>
-                                <th>Price</th>
-                                <th>Total</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="Photos/Flowers/the_anna.webp" alt="flower">
-                                </td>
-                                <td>The Anna</td>
-                                <td>1</td>
-                                <td>£29.99</td>
-                                <td>£29.99</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="Photos/Flowers/the_becca.webp" alt="flower">
-                                </td>
-                                <td>The Becca</td>
-                                <td>2</td>
-                                <td>£19.99</td>
-                                <td>£39.98</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="Photos/Flowers/the_hallie.webp" alt="flower">
-                                </td>
-                                <td>The Hallie</td>
-                                <td>1</td>
-                                <td>£34.99</td>
-                                <td>£34.99</td>
-                            </tr>
-                        </table>
-                        <div class="row">
-                            <div class="col-4 total-summary">
-                                <h5>Sub-Total</h5>
-                                <h5>Delivery</h5>
-                                <h5>VAT</h5>
-                                <h5>Total</h5>
-                            </div>
-                            <div class="col-4 total-summary">
-                                <h5>£104.96</h5>
-                                <h5>£20.00</h5>
-                                <h5>£24.99</h5>
-                                <h5>£149.95</h5>
-                            </div>
-                            <div class="col-4"></div>
-                        </div>
-                    </div>
-
+                    <?php include 'order-summary-table.php'; ?>
                 </div>
             </div>
-
         </div>
 
 

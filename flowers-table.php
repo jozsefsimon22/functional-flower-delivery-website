@@ -35,7 +35,7 @@
                     <h6>£" . $row['price'] . "</h6>
                 </div>
                 <div class='row'>
-                    <button>Add to Cart</button>
+                    <button id=" . $row['id'] . ">Add to Cart</button>
                 </div>
             </div>";
 

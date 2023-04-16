@@ -1,6 +1,6 @@
 <?php
 $query = "CREATE TABLE IF NOT EXISTS `users` (
-  `email` int(10) NOT NULL,
+  `email` VARCHAR(225) NOT NULL,  
   `password` VARCHAR(225) NOT NULL,
   `firstName` VARCHAR(50) NOT NULL,
   `lastName` VARCHAR(50) NOT NULL,
